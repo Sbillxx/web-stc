@@ -1,7 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  allowedDevOrigins: [
+    "*.ngrok-free.app",
+    "**.ngrok-free.app",
+    "*.ngrok.app",
+    "**.ngrok.app",
+    "*.ngrok.io",
+    "**.ngrok.io",
+    "*.loca.lt",
+    "**.loca.lt",
+    "*.trycloudflare.com",
+    "**.trycloudflare.com",
+  ],
   experimental: {
     agentFeedback: true,
   },
