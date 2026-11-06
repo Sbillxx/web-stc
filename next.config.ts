@@ -13,6 +13,14 @@ const nextConfig: NextConfig = {
     "*.trycloudflare.com",
     "**.trycloudflare.com",
   ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
   experimental: {
     agentFeedback: true,
   },
