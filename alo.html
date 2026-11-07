@@ -786,13 +786,14 @@
             border-top: 1px solid #e2e8f0;
             border-bottom: 1px solid #e2e8f0;
             position: relative;
-            padding: 44px 0 48px;
+            padding: 48px 0 54px;
+            overflow: hidden;
         }
 
         .client-head {
             text-align: center;
             max-width: 800px;
-            margin: 0 auto 30px;
+            margin: 0 auto 32px;
             padding: 0 20px;
         }
 
@@ -815,49 +816,67 @@
             line-height: 1.25;
         }
 
-        .client-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 16px;
+        /* Marquee Continuous Slider (Geser Pelan ke Kiri di PC & Mobile) */
+        .client-marquee-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 8px 0;
+            mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 94%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 94%, transparent 100%);
         }
 
-        @media (max-width: 1024px) {
-            .client-grid {
-                grid-template-columns: repeat(4, 1fr);
+        .client-marquee-track {
+            display: flex;
+            width: max-content;
+            will-change: transform;
+            animation: clientScrollLeft 38s linear infinite;
+        }
+
+        .client-marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        .client-marquee-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-right: 20px;
+            flex-shrink: 0;
+        }
+
+        @keyframes clientScrollLeft {
+            0% {
+                transform: translate3d(0, 0, 0);
             }
-        }
-
-        @media (max-width: 680px) {
-            .client-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-                padding: 0 16px;
+            100% {
+                transform: translate3d(-50%, 0, 0);
             }
         }
 
         .client-card {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 16px 12px 14px;
+            border-radius: 14px;
+            padding: 16px 18px 14px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            min-height: 100px;
-            transition: all 0.25s ease;
-            box-shadow: 0 2px 6px rgba(10, 44, 74, 0.02);
+            width: 210px;
+            height: 108px;
+            flex-shrink: 0;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+            box-shadow: 0 2px 8px rgba(10, 44, 74, 0.03);
+            user-select: none;
         }
 
         .client-card:hover {
             background: #ffffff;
             border-color: #cbd5e1;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(10, 44, 74, 0.08);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(10, 44, 74, 0.09);
         }
 
         .client-card-logo-wrap {
@@ -871,10 +890,12 @@
 
         .client-card-logo-wrap img {
             max-height: 44px;
-            max-width: 90%;
+            max-width: 88%;
             object-fit: contain;
             filter: contrast(1.05);
             transition: transform 0.25s ease;
+            display: block;
+            pointer-events: none;
         }
 
         .client-card:hover .client-card-logo-wrap img {
@@ -882,10 +903,53 @@
         }
 
         .client-card-name {
-            font-size: 12px;
+            font-size: 12.5px;
             font-weight: 600;
             color: #1e293b;
             line-height: 1.25;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .sec-clients {
+                padding: 38px 0 42px;
+            }
+
+            .client-head {
+                margin-bottom: 24px;
+            }
+
+            .client-card {
+                width: 180px;
+                height: 98px;
+                padding: 12px 14px 10px;
+                border-radius: 12px;
+            }
+
+            .client-card-logo-wrap {
+                height: 42px;
+                margin-bottom: 6px;
+            }
+
+            .client-card-logo-wrap img {
+                max-height: 38px;
+            }
+
+            .client-card-name {
+                font-size: 11.5px;
+            }
+
+            .client-marquee-group {
+                gap: 14px;
+                padding-right: 14px;
+            }
+
+            .client-marquee-track {
+                animation-duration: 32s;
+            }
         }
 
 
@@ -2256,113 +2320,156 @@
                     <h2 class="client-title">Dipercaya oleh Kementerian, Lembaga Negara, BUMN &amp; Swasta</h2>
                 </div>
 
-                <div class="client-grid">
-                    <!-- 1. Bank Indonesia -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/bank-indonesia.png" alt="Bank Indonesia" loading="lazy" />
+                <div class="client-marquee-container" aria-label="Mitra &amp; Klien Resmi Sufi Training Center">
+                    <div class="client-marquee-track">
+                        <div class="client-marquee-group">
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/bank-indonesia.png" alt="Bank Indonesia (BI)" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Bank Indonesia (BI)</span>
                         </div>
-                        <span class="client-card-name">Bank Indonesia (BI)</span>
-                    </div>
-
-                    <!-- 2. Bank BNI -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/bni.png" alt="Bank BNI" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/bni.png" alt="Bank BNI" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Bank BNI</span>
                         </div>
-                        <span class="client-card-name">Bank BNI</span>
-                    </div>
-
-                    <!-- 3. PT Pelindo -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/pelindo.png" alt="PT Pelindo" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/pelindo.png" alt="PT Pelindo" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PT Pelindo</span>
                         </div>
-                        <span class="client-card-name">PT Pelindo</span>
-                    </div>
-
-                    <!-- 4. Pemda Kabupaten Tasikmalaya -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/pemda-tasikmalaya.png" alt="Pemda Kab. Tasikmalaya" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/pemda-tasikmalaya.png" alt="Pemkab Tasikmalaya" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Pemkab Tasikmalaya</span>
                         </div>
-                        <span class="client-card-name">Pemkab Tasikmalaya</span>
-                    </div>
-
-                    <!-- 5. Pemprov DKI Jakarta -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/pemprov-dki.png" alt="Pemprov DKI Jakarta" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/pemprov-dki.png" alt="Pemprov DKI Jakarta" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Pemprov DKI Jakarta</span>
                         </div>
-                        <span class="client-card-name">Pemprov DKI Jakarta</span>
-                    </div>
-
-                    <!-- 6. Astra Agro Lestari -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/astra-agro.png" alt="Astra Agro Lestari" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/astra-agro.png" alt="Astra Agro Lestari" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Astra Agro Lestari</span>
                         </div>
-                        <span class="client-card-name">Astra Agro Lestari</span>
-                    </div>
-
-                    <!-- 7. Kepolisian Resor -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/polres.png" alt="Kepolisian Resor (Polres)" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/polres.png" alt="Kepolisian Resor (Polres)" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Kepolisian Resor (Polres)</span>
                         </div>
-                        <span class="client-card-name">Kepolisian Resor (Polres)</span>
-                    </div>
-
-                    <!-- 8. PT Gudang Garam -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/gudang-garam.png" alt="PT Gudang Garam" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/gudang-garam.png" alt="PT Gudang Garam" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PT Gudang Garam</span>
                         </div>
-                        <span class="client-card-name">PT Gudang Garam</span>
-                    </div>
-
-                    <!-- 9. Sinarmas Reinsurance -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/simasre.png" alt="Sinarmas Reinsurance" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/simasre.png" alt="Sinarmas Reinsurance" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Sinarmas Reinsurance</span>
                         </div>
-                        <span class="client-card-name">Sinarmas Reinsurance</span>
-                    </div>
-
-                    <!-- 10. Horison Hotel Tasikmalaya -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/horison.png" alt="Horison Hotel" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/horison.png" alt="Horison Hotel" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Horison Hotel</span>
                         </div>
-                        <span class="client-card-name">Horison Hotel</span>
-                    </div>
-
-                    <!-- 11. PT Ansori Jaya -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/ansori-jaya.png" alt="PT Ansori Jaya" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/ansori-jaya.png" alt="PT Ansori Jaya" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PT Ansori Jaya</span>
                         </div>
-                        <span class="client-card-name">PT Ansori Jaya</span>
-                    </div>
-
-                    <!-- 12. PP Kebon Jambu Al Islamy -->
-                    <div class="client-card">
-                        <div class="client-card-logo-wrap">
-                            
-                            <img src="/images/clients/kebon-jambu.png" alt="PP Kebon Jambu Al Islamy" loading="lazy" />
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/kebon-jambu.png" alt="PP Kebon Jambu" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PP Kebon Jambu</span>
                         </div>
-                        <span class="client-card-name">PP Kebon Jambu</span>
+                        </div>
+                        <div class="client-marquee-group" aria-hidden="true">
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/bank-indonesia.png" alt="Bank Indonesia (BI)" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Bank Indonesia (BI)</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/bni.png" alt="Bank BNI" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Bank BNI</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/pelindo.png" alt="PT Pelindo" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PT Pelindo</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/pemda-tasikmalaya.png" alt="Pemkab Tasikmalaya" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Pemkab Tasikmalaya</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/pemprov-dki.png" alt="Pemprov DKI Jakarta" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Pemprov DKI Jakarta</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/astra-agro.png" alt="Astra Agro Lestari" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Astra Agro Lestari</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/polres.png" alt="Kepolisian Resor (Polres)" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Kepolisian Resor (Polres)</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/gudang-garam.png" alt="PT Gudang Garam" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PT Gudang Garam</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/simasre.png" alt="Sinarmas Reinsurance" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Sinarmas Reinsurance</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/horison.png" alt="Horison Hotel" loading="lazy">
+                            </div>
+                            <span class="client-card-name">Horison Hotel</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/ansori-jaya.png" alt="PT Ansori Jaya" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PT Ansori Jaya</span>
+                        </div>
+                        <div class="client-card">
+                            <div class="client-card-logo-wrap">
+                                <img src="/images/clients/kebon-jambu.png" alt="PP Kebon Jambu" loading="lazy">
+                            </div>
+                            <span class="client-card-name">PP Kebon Jambu</span>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </section>

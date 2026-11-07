@@ -2,6 +2,21 @@
 
 import { useState } from "react";
 
+const CLIENT_PARTNERS = [
+    { name: "Bank Indonesia (BI)", logo: "/images/clients/bank-indonesia.png" },
+    { name: "Bank BNI", logo: "/images/clients/bni.png" },
+    { name: "PT Pelindo", logo: "/images/clients/pelindo.png" },
+    { name: "Pemkab Tasikmalaya", logo: "/images/clients/pemda-tasikmalaya.png" },
+    { name: "Pemprov DKI Jakarta", logo: "/images/clients/pemprov-dki.png" },
+    { name: "Astra Agro Lestari", logo: "/images/clients/astra-agro.png" },
+    { name: "Kepolisian Resor (Polres)", logo: "/images/clients/polres.png" },
+    { name: "PT Gudang Garam", logo: "/images/clients/gudang-garam.png" },
+    { name: "Sinarmas Reinsurance", logo: "/images/clients/simasre.png" },
+    { name: "Horison Hotel", logo: "/images/clients/horison.png" },
+    { name: "PT Ansori Jaya", logo: "/images/clients/ansori-jaya.png" },
+    { name: "PP Kebon Jambu", logo: "/images/clients/kebon-jambu.png" },
+];
+
 export default function Home() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [trainerPage, setTrainerPage] = useState(0);
@@ -301,7 +316,7 @@ export default function Home() {
             </section>
 
             {/* =========================================================
-     2. MITRA & KLIEN RESMI STC (Slide 12)
+     2. MITRA & KLIEN RESMI STC (Slide 12) - Auto-Scrolling Continuous Slider
      ========================================================= */}
             <section className="sec-clients" id="klien">
                 <div className="client-head">
@@ -309,113 +324,34 @@ export default function Home() {
                     <h2 className="client-title">Dipercaya oleh Kementerian, Lembaga Negara, BUMN &amp; Swasta</h2>
                 </div>
 
-                <div className="client-grid">
-                    {/* 1. Bank Indonesia */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/bank-indonesia.png" alt="Bank Indonesia" loading="lazy" />
+                {/* Continuous Infinite Marquee Slider for PC & Mobile */}
+                <div className="client-marquee-container" aria-label="Mitra & Klien Resmi Sufi Training Center">
+                    <div className="client-marquee-track">
+                        {/* Group 1 */}
+                        <div className="client-marquee-group">
+                            {CLIENT_PARTNERS.map((client, idx) => (
+                                <div className="client-card" key={`c1-${idx}`}>
+                                    <div className="client-card-logo-wrap">
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        <img src={client.logo} alt={client.name} loading="lazy" />
+                                    </div>
+                                    <span className="client-card-name">{client.name}</span>
+                                </div>
+                            ))}
                         </div>
-                        <span className="client-card-name">Bank Indonesia (BI)</span>
-                    </div>
 
-                    {/* 2. Bank BNI */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/bni.png" alt="Bank BNI" loading="lazy" />
+                        {/* Group 2 (Cloned for seamless 100% loop) */}
+                        <div className="client-marquee-group" aria-hidden="true">
+                            {CLIENT_PARTNERS.map((client, idx) => (
+                                <div className="client-card" key={`c2-${idx}`}>
+                                    <div className="client-card-logo-wrap">
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        <img src={client.logo} alt="" loading="lazy" />
+                                    </div>
+                                    <span className="client-card-name">{client.name}</span>
+                                </div>
+                            ))}
                         </div>
-                        <span className="client-card-name">Bank BNI</span>
-                    </div>
-
-                    {/* 3. PT Pelindo */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/pelindo.png" alt="PT Pelindo" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">PT Pelindo</span>
-                    </div>
-
-                    {/* 4. Pemda Kabupaten Tasikmalaya */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/pemda-tasikmalaya.png" alt="Pemda Kab. Tasikmalaya" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">Pemkab Tasikmalaya</span>
-                    </div>
-
-                    {/* 5. Pemprov DKI Jakarta */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/pemprov-dki.png" alt="Pemprov DKI Jakarta" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">Pemprov DKI Jakarta</span>
-                    </div>
-
-                    {/* 6. Astra Agro Lestari */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/astra-agro.png" alt="Astra Agro Lestari" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">Astra Agro Lestari</span>
-                    </div>
-
-                    {/* 7. Kepolisian Resor */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/polres.png" alt="Kepolisian Resor (Polres)" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">Kepolisian Resor (Polres)</span>
-                    </div>
-
-                    {/* 8. PT Gudang Garam */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/gudang-garam.png" alt="PT Gudang Garam" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">PT Gudang Garam</span>
-                    </div>
-
-                    {/* 9. Sinarmas Reinsurance */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/simasre.png" alt="Sinarmas Reinsurance" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">Sinarmas Reinsurance</span>
-                    </div>
-
-                    {/* 10. Horison Hotel Tasikmalaya */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/horison.png" alt="Horison Hotel" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">Horison Hotel</span>
-                    </div>
-
-                    {/* 11. PT Ansori Jaya */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/ansori-jaya.png" alt="PT Ansori Jaya" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">PT Ansori Jaya</span>
-                    </div>
-
-                    {/* 12. PP Kebon Jambu Al Islamy */}
-                    <div className="client-card">
-                        <div className="client-card-logo-wrap">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src="/images/clients/kebon-jambu.png" alt="PP Kebon Jambu Al Islamy" loading="lazy" />
-                        </div>
-                        <span className="client-card-name">PP Kebon Jambu</span>
                     </div>
                 </div>
             </section>
