@@ -8,13 +8,13 @@ const CLIENT_PARTNERS = [
     { name: "PT Pelindo", logo: "/images/clients/pelindo.png" },
     { name: "Pemkab Tasikmalaya", logo: "/images/clients/pemda-tasikmalaya.png" },
     { name: "Pemprov DKI Jakarta", logo: "/images/clients/pemprov-dki.png" },
-    { name: "Astra Agro Lestari", logo: "/images/clients/astra-agro.png" },
-    { name: "Kepolisian Resor (Polres)", logo: "/images/clients/polres.png" },
-    { name: "PT Gudang Garam", logo: "/images/clients/gudang-garam.png" },
-    { name: "Sinarmas Reinsurance", logo: "/images/clients/simasre.png" },
-    { name: "Horison Hotel", logo: "/images/clients/horison.png" },
+    { name: "PT Astra Agro Lestari Tbk", logo: "/images/clients/astra-agro.png" },
+    { name: "Kepolisian Negara Republik Indonesia (Polri)", logo: "/images/clients/polres.png" },
+    { name: "PT Gudang Garam Tbk", logo: "/images/clients/gudang-garam.png" },
+    { name: "Sinarmas Reinsurance (Simasre)", logo: "/images/clients/simasre.png" },
+    { name: "Horison Hotels Group", logo: "/images/clients/horison.png" },
     { name: "PT Ansori Jaya", logo: "/images/clients/ansori-jaya.png" },
-    { name: "PP Kebon Jambu", logo: "/images/clients/kebon-jambu.png" },
+    { name: "Pondok Pesantren Kebon Jambu Al-Islamy", logo: "/images/clients/kebon-jambu.png" },
 ];
 
 export default function Home() {

@@ -851,9 +851,9 @@
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            height: 84px;
-            min-width: 140px;
-            padding: 4px 12px;
+            height: 92px;
+            min-width: 150px;
+            padding: 4px 14px;
             cursor: pointer;
             user-select: none;
             background: transparent;
@@ -863,12 +863,12 @@
 
         /* Default: Hitam Putih (Grayscale) & Sedikit Meredup */
         .client-logo-item img {
-            max-height: 72px;
-            max-width: 190px;
+            max-height: 78px;
+            max-width: 205px;
             width: auto;
             height: auto;
             object-fit: contain;
-            filter: grayscale(100%) opacity(0.5);
+            filter: grayscale(100%) opacity(0.52);
             transition: filter 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
             display: block;
             pointer-events: none;
@@ -876,8 +876,8 @@
 
         /* Hover Logo: Menyala Berwarna Asli & Sedikit Dipertegas */
         .client-logo-item:hover img {
-            filter: grayscale(0%) opacity(1) contrast(1.08);
-            transform: scale(1.14);
+            filter: grayscale(0%) opacity(1) contrast(1.06);
+            transform: scale(1.15);
         }
 
         @media (max-width: 768px) {
@@ -896,8 +896,8 @@
             }
 
             .client-marquee-group {
-                gap: 36px;
-                padding-right: 36px;
+                gap: 40px;
+                padding-right: 40px;
             }
 
             .client-marquee-track {
@@ -905,18 +905,18 @@
             }
 
             .client-logo-item {
-                height: 64px;
-                min-width: 110px;
-                padding: 2px 8px;
+                height: 70px;
+                min-width: 120px;
+                padding: 2px 10px;
             }
 
             .client-logo-item img {
-                max-height: 54px;
-                max-width: 150px;
+                max-height: 58px;
+                max-width: 160px;
             }
 
             .client-logo-item:hover img {
-                transform: scale(1.08);
+                transform: scale(1.10);
             }
         }
 
