@@ -192,7 +192,7 @@ export default function Home() {
                         <div className="history-visual">
                             <div className="history-card">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1200&q=80"
+                                <img src="/images/pesantren-landscape.jpg"
                                     alt="Sufi Training Center - Pesantren Idrisiyyah Tasikmalaya" className="history-card-img"
                                     loading="lazy" />
                             </div>
@@ -202,15 +202,13 @@ export default function Home() {
             </section>
 
             {/* =========================================================
-     1. SEMINAR & TRAINING (Ref: Screenshot 1)
+     1. SEMINAR & TRAINING (Materi Pokok Bahasan STC)
      ========================================================= */}
             <section className="sec-seminar" id="seminar">
                 <div className="container">
                     <div className="head">
-                        <h1>Seminar &amp; Training STC
-                        </h1>
-                        <p>Apa yang ingin Anda Tingkatkan dalam
-                            Diri dan Kepemimpinan Lembaga Anda?</p>
+                        <h1>Materi Pokok Bahasan STC</h1>
+                        <p>Kurikulum Pelatihan Holistik Memadukan Pendekatan Sufistik, NLP, dan Neuroscience</p>
                     </div>
 
                     <div className="seminar-grid">
@@ -224,10 +222,8 @@ export default function Home() {
                                     <path d="M14 11h3a3 3 0 0 1 3 3v4" />
                                 </svg>
                             </div>
-                            <h3>Spiritual Wellness</h3>
-                            <p>Bagaimana
-                                Tetap Tenang, Utuh, dan Berenergi melalui pendekatan Sufistik, NLP &amp; Neuroscience dalam
-                                situasi sesulit apapun.</p>
+                            <h3>5 Human Dimensions</h3>
+                            <p>Menyelaraskan 5 unsur kompleks manusia yang saling berinteraksi: Jasmani, Akal, Emosi, Rohani, dan Jiwa untuk melahirkan pribadi pemimpin yang utuh.</p>
                         </div>
 
                         {/* Item 2 */}
@@ -240,10 +236,8 @@ export default function Home() {
                                     <rect x="10" y="10" width="4" height="4" rx="1" />
                                 </svg>
                             </div>
-                            <h3>Sacred Governance</h3>
-                            <p>
-                                Bagaimana Me-Revolusi Budaya Kerja Instansi &amp; Korporasi Anda sehingga berjalan penuh amanah
-                                dan berintegritas tinggi.</p>
+                            <h3>Fondasi Agama Terpadu</h3>
+                            <p>Mengintegrasikan kesatuan esensial Iman, Islam, dan Ihsan ke dalam etika kerja, integritas personal, dan budaya tata kelola amanah (Sacred Governance).</p>
                         </div>
 
                         {/* Item 3 */}
@@ -255,10 +249,8 @@ export default function Home() {
                                     <path d="M6 6l10-3v3" />
                                 </svg>
                             </div>
-                            <h3>Sufistic Wellness BI</h3>
-                            <p>
-                                Bagaimana Meningkatkan Ketahanan Mental &amp; Ketenangan Eksekutif Otoritas Keuangan dengan
-                                kepuasan mencapai 4.9/5.0.</p>
+                            <h3>Manajemen Hati</h3>
+                            <p>Membimbing batin menuju jiwa yang damai (nafs muthmainnah), hati yang selamat dan tulus (qalbun salim), serta sikap senantiasa mawas diri (muraqabah).</p>
                         </div>
 
                         {/* Item 4 */}
@@ -273,10 +265,8 @@ export default function Home() {
                                     <path d="M16 12v-3" />
                                 </svg>
                             </div>
-                            <h3>Government Officials</h3>
-                            <p>
-                                Menjadi Aparatur Negara yang Handal, Amanah, dan Anti-Fraud melalui pembersihan jiwa (Tazkiyatun
-                                Nafs) selama 2 hari 1 malam.</p>
+                            <h3>Tazkiyatun Nafs</h3>
+                            <p>Pembersihan jiwa sebagai benteng moral terkuat aparatur dan pimpinan dari jerat stres, godaan duniawi, penyalahgunaan wewenang, dan budaya anti-fraud.</p>
                         </div>
 
                         {/* Item 5 */}
@@ -289,10 +279,8 @@ export default function Home() {
                                     <path d="M6 10l9-7" />
                                 </svg>
                             </div>
-                            <h3>Spiritual Hospitality</h3>
-                            <p>
-                                ““Bagaimana Melayani dengan Nilai Ihsan”” Menciptakan Budaya Pelayanan Prima dan Keramahtamahan
-                                dari Hati yang Bersih.</p>
+                            <h3>Ibadah Terbimbing</h3>
+                            <p>Praktik shalat khusyuk, dzikir qalbu sirri dan jahri, muhasabah mendalam, tadarus tematik, serta qiyamul lail untuk ketenangan batin hakiki.</p>
                         </div>
 
                         {/* Item 6 */}
@@ -305,40 +293,131 @@ export default function Home() {
                                     <path d="M17.5 11v6" />
                                 </svg>
                             </div>
-                            <h3>Spiritual Revival</h3>
-                            <p>
-                                Melatih regulasi emosi, dzikir, dan muhasabah berkala hingga menjadi pemimpin yang tenang
-                                mengambil keputusan besar.</p>
+                            <h3>Pendekatan 3 Pilar</h3>
+                            <p>Sinergi ilmiah metode Sufistik, Neuro-Linguistic Programming (NLP), dan temuan mutakhir Neuroscience untuk transformasi karakter yang terukur.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* =========================================================
-     2. MEDIA & CLIENT PARTNERS (Ref: Screenshot 2)
+     2. MITRA & KLIEN RESMI STC (Slide 12)
      ========================================================= */}
             <section className="sec-clients" id="klien">
-                <div className="white-logo-bar">
-                    <div className="logo-row">
-                        <div className="tv-logo-box">
-                            <div className="tv-gtv"><span className="g-circle"></span><span>TVRI</span>
-                            </div>
-                        </div>
-                        <div className="tv-logo-box">
-                            <div className="tv-rtv"><span className="swoosh"></span><span>BI</span></div>
-                        </div>
-                        <div className="tv-logo-box">
-                            <div className="tv-trans7"><span>BANK</span><span className="prism">BNI</span></div>
-                        </div>
-                        <div className="tv-logo-box">
-                            <div className="tv-transtv"><span>PEL</span><span className="a-tri">▲</span><span>INDO</span></div>
-                        </div>
-                        <div className="tv-logo-box">
-                            <div className="tv-rcti">PEMDA</div>
-                        </div>
-                    </div>
+                <div className="client-head">
+                    <span className="client-eyebrow">LEMBAGA &amp; KORPORASI TERNAMA</span>
+                    <h2 className="client-title">Dipercaya oleh Kementerian, Lembaga Negara, BUMN &amp; Swasta</h2>
                 </div>
 
+                <div className="client-grid">
+                    {/* 1. Bank Indonesia */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/bank-indonesia.png" alt="Bank Indonesia" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Bank Indonesia (BI)</span>
+                    </div>
+
+                    {/* 2. Bank BNI */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/bni.png" alt="Bank BNI" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Bank BNI</span>
+                    </div>
+
+                    {/* 3. PT Pelindo */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/pelindo.png" alt="PT Pelindo" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">PT Pelindo</span>
+                    </div>
+
+                    {/* 4. Pemda Kabupaten Tasikmalaya */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/pemda-tasikmalaya.png" alt="Pemda Kab. Tasikmalaya" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Pemkab Tasikmalaya</span>
+                    </div>
+
+                    {/* 5. Pemprov DKI Jakarta */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/pemprov-dki.png" alt="Pemprov DKI Jakarta" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Pemprov DKI Jakarta</span>
+                    </div>
+
+                    {/* 6. Astra Agro Lestari */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/astra-agro.png" alt="Astra Agro Lestari" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Astra Agro Lestari</span>
+                    </div>
+
+                    {/* 7. Kepolisian Resor */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/polres.png" alt="Kepolisian Resor (Polres)" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Kepolisian Resor (Polres)</span>
+                    </div>
+
+                    {/* 8. PT Gudang Garam */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/gudang-garam.png" alt="PT Gudang Garam" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">PT Gudang Garam</span>
+                    </div>
+
+                    {/* 9. Sinarmas Reinsurance */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/simasre.png" alt="Sinarmas Reinsurance" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Sinarmas Reinsurance</span>
+                    </div>
+
+                    {/* 10. Horison Hotel Tasikmalaya */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/horison.png" alt="Horison Hotel" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">Horison Hotel</span>
+                    </div>
+
+                    {/* 11. PT Ansori Jaya */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/ansori-jaya.png" alt="PT Ansori Jaya" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">PT Ansori Jaya</span>
+                    </div>
+
+                    {/* 12. PP Kebon Jambu Al Islamy */}
+                    <div className="client-card">
+                        <div className="client-card-logo-wrap">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/clients/kebon-jambu.png" alt="PP Kebon Jambu Al Islamy" loading="lazy" />
+                        </div>
+                        <span className="client-card-name">PP Kebon Jambu</span>
+                    </div>
+                </div>
             </section>
 
             {/* =========================================================
@@ -349,25 +428,26 @@ export default function Home() {
                     <h2 className="method-heading">STC Method</h2>
 
                     <div className="method-diagram">
-                        {/* Left Column (01 - 04) */}
+                        {/* Left Column (01 - 04) - 4 Pilar Metodologi */}
                         <div className="m-col left">
                             <div className="m-item">
                                 <div className="m-text">
-                                    Experiential<br />Learning</div>
+                                    Transformational<br />Training</div>
                                 <div className="m-badge">01</div>
                             </div>
                             <div className="m-item">
                                 <div className="m-text">
-                                    Two-way<br />communication</div>
+                                    Experiential<br />Learning</div>
                                 <div className="m-badge">02</div>
                             </div>
                             <div className="m-item">
-                                <div className="m-text">Coaching &amp; NLP</div>
+                                <div className="m-text">
+                                    Muhasabah<br />Mendalam</div>
                                 <div className="m-badge">03</div>
                             </div>
                             <div className="m-item">
-                                <div className="m-text">Muhasabah
-                                    &amp;<br />Dzikir</div>
+                                <div className="m-text">
+                                    Tanya Jawab<br />Interaktif</div>
                                 <div className="m-badge">04</div>
                             </div>
                         </div>
@@ -404,26 +484,27 @@ export default function Home() {
                             <path d="M189 344 H124 V190" stroke="#16222f" strokeWidth="2" strokeDasharray="5 4" />
                         </svg>
 
-                        {/* Right Column (05 - 08) */}
+                        {/* Right Column (05 - 08) - 4 Karakter Jiwa */}
                         <div className="m-col right">
                             <div className="m-item">
                                 <div className="m-badge">05</div>
-                                <div className="m-text">Tazkiyatun Nafs</div>
+                                <div className="m-text">
+                                    Jiwa<br />Mardhiyyah</div>
                             </div>
                             <div className="m-item">
                                 <div className="m-badge">06</div>
                                 <div className="m-text">
-                                    Neuroscience<br />Inspiration</div>
+                                    Jiwa<br />Muthmainnah</div>
                             </div>
                             <div className="m-item">
                                 <div className="m-badge">07</div>
-                                <div className="m-text">5
-                                    Human<br />Dimensions</div>
+                                <div className="m-text">
+                                    Qalbun<br />Salim</div>
                             </div>
                             <div className="m-item">
                                 <div className="m-badge">08</div>
-                                <div className="m-text">Qiyamul Lail
-                                    &amp;<br />Tadarus</div>
+                                <div className="m-text">
+                                    Sikap<br />Muraqabah</div>
                             </div>
                         </div>
                     </div>
@@ -433,13 +514,13 @@ export default function Home() {
             </section>
 
             {/* =========================================================
-     4. TRAINER ANDA (Ref: Screenshot 4)
+     4. TRAINER ANDA (Slide 10 & 11)
      ========================================================= */}
             <section className="sec-trainer" id="trainer">
                 <div className="container">
                     <div className="head">
                         <h2>Trainer Anda</h2>
-                        <p>Para trainer dan praktisi yang akan membantu mencapai GOAL Anda</p>
+                        <p>Dewan Guru, Senior Trainer &amp; Praktisi Bersertifikasi Sufi Training Center</p>
                     </div>
 
                     <div className="trainer-stage">
@@ -467,110 +548,105 @@ export default function Home() {
                         </button>
 
                         <div className="trainer-cards" id="trainerList">
-                            {/* Card 1 */}
+                            {/* Card 1 - Founder */}
                             <div className="tr-card" hidden={!showAllTrainers && trainerPage !== 0}>
-                                <div className="tr-photo-frame">
-                                    <svg viewBox="0 0 300 330" aria-hidden="true">
-                                        {/* Cityscape silhouette backdrop */}
-                                        <rect x="20" y="60" width="45" height="270" fill="rgba(255,255,255,0.35)" />
-                                        <rect x="75" y="30" width="55" height="300" fill="rgba(255,255,255,0.28)" />
-                                        <rect x="190" y="50" width="60" height="280" fill="rgba(255,255,255,0.32)" />
-                                        {/* Suit & Portrait */}
-                                        <path d="M35 330 C35 225 265 225 265 330 Z" fill="#1e242b" />
-                                        <polygon points="150,245 122,315 150,330 178,315" fill="#e8d7df" />
-                                        <polygon points="150,260 140,330 160,330" fill="#6b3fa0" />
-                                        <circle cx="150" cy="145" r="58" fill="#d9a17c" />
-                                        <path d="M92 135 C92 80 208 80 208 135 C200 102 100 102 92 135 Z" fill="#1c1c1c" />
-                                    </svg>
+                                <div className="tr-photo-frame cover-photo">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/syekh-akbar.png"
+                                        alt="Syekh Akbar M. Fathurahman, M.Ag"
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <div className="tr-info-box">
-                                    <b>Syekh Akbar M.
-                                        Fathurahman</b>
-                                    <span>Founder &amp; Utama</span>
+                                    <b>Syekh Akbar M. Fathurahman, M.Ag</b>
+                                    <span className="tr-role">Founder STC &amp; Pimpinan Pesantren</span>
+                                    <span className="tr-cred">Mursyid Tarekat Idrisiyyah · Khatib Istiqlal · Rois Idaroh &apos;Aliyah JATMAN</span>
                                 </div>
                             </div>
 
                             {/* Card 2 */}
                             <div className="tr-card" hidden={!showAllTrainers && trainerPage !== 0}>
                                 <div className="tr-photo-frame">
-                                    <svg viewBox="0 0 300 330" aria-hidden="true">
-                                        <rect x="30" y="45" width="50" height="285" fill="rgba(255,255,255,0.32)" />
-                                        <rect x="165" y="25" width="65" height="305" fill="rgba(255,255,255,0.26)" />
-                                        <path d="M35 330 C35 225 265 225 265 330 Z" fill="#232730" />
-                                        <polygon points="150,245 120,320 180,320" fill="#d4e4f4" />
-                                        <circle cx="150" cy="145" r="58" fill="#c98e6b" />
-                                        <path d="M94 130 C94 82 206 82 206 130 C196 104 104 104 94 130 Z" fill="#262626" />
-                                    </svg>
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/asep-deni.png"
+                                        alt="Ust. Dr. Asep Deni Al-Idrisi, M.Pd"
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <div className="tr-info-box">
-                                    <b>Ust. Dr. Asep Deni,
-                                        M.Pd</b>
-                                    <span>Senior Trainer</span>
+                                    <b>Ust. Dr. Asep Deni Al-Idrisi, M.Pd</b>
+                                    <span className="tr-role">Senior Trainer STC</span>
+                                    <span className="tr-cred">Doktor Pendidikan &amp; Pakar Transformasi Karakter Kepemimpinan</span>
                                 </div>
                             </div>
 
                             {/* Card 3 */}
                             <div className="tr-card" hidden={!showAllTrainers && trainerPage !== 0}>
                                 <div className="tr-photo-frame">
-                                    <svg viewBox="0 0 300 330" aria-hidden="true">
-                                        <rect x="25" y="55" width="55" height="275" fill="rgba(255,255,255,0.34)" />
-                                        <rect x="200" y="35" width="55" height="295" fill="rgba(255,255,255,0.3)" />
-                                        <path d="M35 330 C35 225 265 225 265 330 Z" fill="#181c22" />
-                                        <polygon points="150,245 124,320 176,320" fill="#ffffff" />
-                                        <circle cx="150" cy="145" r="58" fill="#e0ab88" />
-                                        <path d="M93 135 C93 76 207 76 207 135 C195 100 105 100 93 135 Z" fill="#141414" />
-                                    </svg>
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/herman-dody.png"
+                                        alt="H. Herman Dody Isdarmadi, MNLP, Cht."
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <div className="tr-info-box">
-                                    <b>H. Herman Dody, MNLP,
-                                        Cht.</b>
-                                    <span>Senior Trainer</span>
+                                    <b>H. Herman Dody Isdarmadi, S.Ak, MNLP, Cht.</b>
+                                    <span className="tr-role">Senior Trainer &amp; NLP Master</span>
+                                    <span className="tr-cred">Master Practitioner NLP &amp; Certified Hypnotherapist</span>
                                 </div>
                             </div>
 
-                            {/* Extra STC Trainers (Toggled when clicking Semua Trainer) */}
+                            {/* Card 4 - Cecep Hidayatulloh */}
                             <div className="tr-card extra" hidden={!showAllTrainers && trainerPage !== 1}>
                                 <div className="tr-photo-frame">
-                                    <svg viewBox="0 0 300 330" aria-hidden="true">
-                                        <rect x="35" y="40" width="55" height="290" fill="rgba(255,255,255,0.32)" />
-                                        <path d="M35 330 C35 225 265 225 265 330 Z" fill="#1e2d3b" />
-                                        <polygon points="150,245 124,320 176,320" fill="#ffffff" />
-                                        <circle cx="150" cy="145" r="58" fill="#d49b78" />
-                                    </svg>
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/cecep-hidayatulloh.png"
+                                        alt="Ust. Cecep Hidayatulloh Al-Idrisi, M.Sos."
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <div className="tr-info-box">
-                                    <b>Ust. Cecep Hidayatulloh, M.Sos</b>
-                                    <span>Senior Trainer</span>
+                                    <b>Ust. Cecep Hidayatulloh Al-Idrisi, M.Sos.</b>
+                                    <span className="tr-role">Senior Trainer STC</span>
+                                    <span className="tr-cred">Magister Sosial, Komunikasi Dakwah &amp; Manajemen Qalbu</span>
                                 </div>
                             </div>
 
+                            {/* Card 5 - Taufiqurrachman */}
                             <div className="tr-card extra" hidden={!showAllTrainers && trainerPage !== 1}>
-                                <div className="tr-photo-frame">
-                                    <svg viewBox="0 0 300 330" aria-hidden="true">
-                                        <rect x="185" y="40" width="55" height="290" fill="rgba(255,255,255,0.32)" />
-                                        <path d="M35 330 C35 225 265 225 265 330 Z" fill="#21382c" />
-                                        <polygon points="150,245 124,320 176,320" fill="#ffffff" />
-                                        <circle cx="150" cy="145" r="58" fill="#cfa07e" />
-                                    </svg>
+                                <div className="tr-photo-frame cover-photo">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/taufiqurrachman.png"
+                                        alt="Muhammad Taufiqurrachman, S.E Akt. M.Sc."
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <div className="tr-info-box">
-                                    <b>M. Taufiqurrachman, M.Sc.</b>
-                                    <span>Senior Trainer</span>
+                                    <b>M. Taufiqurrachman, S.E Akt. M.Sc.</b>
+                                    <span className="tr-role">Senior Trainer STC</span>
+                                    <span className="tr-cred">Akuntan Publik, Konsultan Tata Kelola &amp; Anti-Fraud</span>
                                 </div>
                             </div>
 
+                            {/* Card 6 - Adang Nurdin */}
                             <div className="tr-card extra" hidden={!showAllTrainers && trainerPage !== 1}>
-                                <div className="tr-photo-frame">
-                                    <svg viewBox="0 0 300 330" aria-hidden="true">
-                                        <rect x="95" y="30" width="65" height="300" fill="rgba(255,255,255,0.32)" />
-                                        <path d="M35 330 C35 225 265 225 265 330 Z" fill="#2c2538" />
-                                        <polygon points="150,245 124,320 176,320" fill="#ffffff" />
-                                        <circle cx="150" cy="145" r="58" fill="#d8a382" />
-                                    </svg>
+                                <div className="tr-photo-frame cover-photo">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/adang-nurdin.png"
+                                        alt="Ust. Adang Nurdin MS Al-Idrisi, M.Pd"
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <div className="tr-info-box">
-                                    <b>Ust. Adang Nurdin MS, M.Pd</b>
-                                    <span>Senior Trainer</span>
+                                    <b>Ust. Adang Nurdin MS Al-Idrisi, M.Pd</b>
+                                    <span className="tr-role">Senior Trainer STC</span>
+                                    <span className="tr-cred">Magister Pendidikan &amp; Pembimbing Ibadah Terbimbing</span>
                                 </div>
                             </div>
                         </div>
@@ -583,157 +659,209 @@ export default function Home() {
                             id="btnAllTr"
                             onClick={() => setShowAllTrainers(!showAllTrainers)}
                         >
-                            <span>{showAllTrainers ? "Tampilkan 3 Trainer" : "Semua Trainer"}</span>{" "}
+                            <span>{showAllTrainers ? "Tampilkan 3 Trainer" : "Lihat Semua 6 Trainer"}</span>{" "}
                             <span>{showAllTrainers ? "↑" : "→"}</span>
                         </button>
+                    </div>
+
+                    {/* Fasilitator Roles Banner from Slide 11 */}
+                    <div className="fasilitator-info-box">
+                        <span className="fasilitator-badge">Rasio 1 : 10–15</span>
+                        <p className="fasilitator-desc">
+                            <strong>Didukung Tim Fasilitator Terlatih:</strong> Mendampingi peserta secara intensif dalam sesi Sharing Session &amp; Mentoring, memandu tadarus tematik dan ibadah qiyamul lail, serta memberikan dukungan penuh IT &amp; dokumentasi demi kenyamanan peserta.
+                        </p>
                     </div>
                 </div>
             </section>
 
             {/* =========================================================
-     5. STAGGERED 4-ROW COLLAGE + PODCAST SERIES (Ref: Screenshot 5)
+     5. STAGGERED 4-ROW COLLAGE + DOKUMENTASI (Slide 14 & 15)
      ========================================================= */}
             <section className="sec-podcast" id="podcast">
                 <div className="container podcast-split">
-                    {/* Left Staggered 4-Row Grid */}
+                    {/* Left Staggered 4-Row Grid with Real Event Photos */}
                     <div className="collage-rows" aria-hidden="true">
-                        {/* Row 1 (Left aligned) */}
+                        {/* Row 1 */}
                         <div className="c-row">
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#5d4037" />
-                                <circle cx="60" cy="36" r="18" fill="#e0ab88" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#689f38" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#4e6e3a" />
-                                <circle cx="60" cy="36" r="18" fill="#cfa07e" />
-                                <path d="M26 90 C26 60 94 60 94 90 Z" fill="#3949ab" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#263238" />
-                                <circle cx="60" cy="36" r="18" fill="#e6b89c" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#111" />
-                            </svg></div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-1.jpg" alt="STC Event 1" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-2.jpg" alt="STC Event 2" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-3.jpg" alt="STC Event 3" loading="lazy" />
+                            </div>
                         </div>
-                        {/* Row 2 (Right shifted) */}
+                        {/* Row 2 */}
                         <div className="c-row">
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#8d6e63" />
-                                <circle cx="60" cy="36" r="18" fill="#f0c4a8" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#1e88e5" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#eceff1" />
-                                <circle cx="60" cy="36" r="18" fill="#d7a184" />
-                                <path d="M26 90 C26 60 94 60 94 90 Z" fill="#212121" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#cfd8dc" />
-                                <circle cx="60" cy="36" r="18" fill="#c68b68" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#90caf9" />
-                            </svg></div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-4.jpg" alt="STC Event 4" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-5.jpg" alt="STC Event 5" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-6.jpg" alt="STC Event 6" loading="lazy" />
+                            </div>
                         </div>
-                        {/* Row 3 (Left aligned) */}
+                        {/* Row 3 */}
                         <div className="c-row">
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#e0d6cc" />
-                                <circle cx="60" cy="36" r="18" fill="#ebbfa4" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#d81b60" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#78909c" />
-                                <circle cx="60" cy="36" r="18" fill="#e5b293" />
-                                <path d="M26 90 C26 60 94 60 94 90 Z" fill="#4e342e" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#689f38" />
-                                <circle cx="60" cy="36" r="18" fill="#9c6448" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#283593" />
-                            </svg></div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-7.jpg" alt="STC Event 7" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-8.jpg" alt="STC Event 8" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/book/jogja-wellness.jpg" alt="Jogja Culture Wellness Festival" loading="lazy" />
+                            </div>
                         </div>
-                        {/* Row 4 (Right shifted) */}
+                        {/* Row 4 */}
                         <div className="c-row">
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#2b1d14" />
-                                <circle cx="60" cy="36" r="18" fill="#d49b78" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#111" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#b0bec5" />
-                                <circle cx="60" cy="36" r="18" fill="#e8be9f" />
-                                <path d="M26 90 C26 60 94 60 94 90 Z" fill="#37474f" />
-                            </svg></div>
-                            <div className="c-cell"><svg viewBox="0 0 120 90">
-                                <rect width="120" height="90" fill="#3e2723" />
-                                <circle cx="60" cy="36" r="18" fill="#8d5538" />
-                                <path d="M28 90 C28 62 92 62 92 90 Z" fill="#cfd8dc" />
-                            </svg></div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/pesantren-landscape.jpg" alt="Pesantren Idrisiyyah" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-1.jpg" alt="STC Training Ballroom" loading="lazy" />
+                            </div>
+                            <div className="c-cell">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/gallery/event-5.jpg" alt="Bank Indonesia Session" loading="lazy" />
+                            </div>
                         </div>
                     </div>
 
                     {/* Right Content */}
                     <div className="podcast-copy">
-                        <span className="eyebrow">Podcast</span>
-                        <h2>STC Spiritual
-                            Wellness Series</h2>
+                        <span className="eyebrow">Dokumentasi &amp; Literasi</span>
+                        <h2>STC Spiritual Wellness Series</h2>
                         <p>
-                            Sumber daya podcast dan kajian tasawuf untuk melengkapi pelatihan Anda, seiring Anda mengembangkan
-                            lebih lanjut ketenangan batin untuk menjadi versi pemimpin yang lebih baik, lebih tenang, dan lebih
-                            berintegritas</p>
-                        <a href="#katalog" className="btn-black-rect">Podcast Sufi Training Center</a>
+                            Dokumentasi visual rangkaian pelatihan kepemimpinan, muhasabah batin, dan kajian tasawuf tematik. Dirancang membimbing eksekutif dan aparatur negara menggapai ketenangan batin (*nafs muthmainnah*) demi melahirkan kepemimpinan yang amanah, adil, dan berdaya tahan tinggi.
+                        </p>
+                        <a href="https://wa.me/6281224249757" target="_blank" rel="noopener noreferrer" className="btn-black-rect">
+                            Konsultasi Jadwal Pelatihan &rarr;
+                        </a>
                     </div>
                 </div>
             </section>
 
             {/* =========================================================
-     6. CATALOG & VIDEO TESTIMONIAL (Ref: Screenshot 6)
+     6. CATALOG & TESTIMONIAL EVALUASI (Slide 13 & 16)
      ========================================================= */}
             <section className="sec-cat-vid" id="katalog">
                 <div className="container cat-vid-grid">
-                    {/* Left Column: Catalog */}
+                    {/* Left Column: Official Book Catalog */}
                     <div className="cat-col">
-                        <h2>STC Training<br />Catalog</h2>
+                        <h2>Buku &amp; Silabus<br />Resmi STC</h2>
 
-                        <div className="catalog-cover">
-                            <div className="cat-header">
-                                <b>x<br />Sufi
-                                    Training<br />Center.</b>
-                                <span>Your Global Engagement Partner</span>
-                            </div>
-
-                            <div className="cat-body-title">
-                                <h3>
-                                    Spiritual<br />Wellness<br />Catalog</h3>
-                            </div>
-
-                            <svg className="cat-illustration" viewBox="0 0 260 180" aria-hidden="true">
-                                {/* Blue abstract curved pattern on right */}
-                                <path d="M180 60 A45 45 0 1 1 225 105" stroke="#0088e8" strokeWidth="11" fill="none"
-                                    strokeLinecap="round" />
-                                <path d="M155 110 A55 55 0 1 0 210 165" stroke="#0088e8" strokeWidth="11" fill="none"
-                                    strokeLinecap="round" />
-                                <path d="M205 125 A35 35 0 1 1 245 160" stroke="#0054a6" strokeWidth="11" fill="none"
-                                    strokeLinecap="round" />
-                                {/* Standing figure in black blazer */}
-                                <circle cx="135" cy="54" r="22" fill="#b87d5b" />
-                                <path d="M110 50 C110 20 160 20 160 50 L166 95 L104 95 Z" fill="#1a1a1a" />
-                                <path d="M92 180 L102 92 L168 92 L178 180 Z" fill="#141414" />
-                                <rect x="104" y="148" width="62" height="32" fill="#9ea7b0" />
-                            </svg>
+                        <div className="catalog-real-cover">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/images/book/buku-stc.jpg"
+                                alt="Buku Spiritual Wellness: Sufistic Neuroscience karya Syekh Akbar M. Fathurahman"
+                                loading="lazy"
+                            />
+                            <span className="catalog-badge-soon">Segera Terbit</span>
                         </div>
 
-                        <a href="https://wa.me/6281224249757" className="btn-view-cat">View catalog</a>
+                        <p className="catalog-desc">
+                            <strong>Spiritual Wellness: Sufistic Neuroscience</strong> karya Syekh Akbar Muhammad Fathurahman, M.Ag. Mengulas integrasi tasawuf dan neurosains modern untuk kepemimpinan utuh.
+                        </p>
+
+                        <a href="https://wa.me/6281224249757" className="btn-view-cat" target="_blank" rel="noopener noreferrer">
+                            Unduh Silabus Lengkap &rarr;
+                        </a>
                     </div>
 
-                    {/* Right Column: Video Testimonial */}
+                    {/* Right Column: Real Testimonials & Evaluation Metrics (Slide 13) */}
                     <div className="vid-col">
-                        <h2>Video Testimonial</h2>
+                        <h2>Hasil Evaluasi &amp; Testimoni Peserta</h2>
 
-                        <div className="green-video-box" onClick={() => window.open('https://wa.me/6281224249757', '_blank')}>
-                            <p>
-                                Mengapa memilih Sufi Training Center?</p>
-                            <div className="green-vid-logo">
-                                <span>✦</span>Sufi Training<br />Center.
+                        <div className="testi-showcase-wrap">
+                            {/* Card 1: Pemkab Tasikmalaya */}
+                            <div className="testi-card-box">
+                                <div className="testi-head-row">
+                                    <div>
+                                        <div className="testi-org-title">Pemerintah Kabupaten Tasikmalaya</div>
+                                        <div className="testi-org-subtitle">Pelatihan Spiritual Wellness (100 Peserta Aparatur Daerah)</div>
+                                    </div>
+                                    <div className="testi-score-pill">
+                                        <span>★</span> 4.70 / 5.00
+                                    </div>
+                                </div>
+                                <p className="testi-quote">
+                                    &ldquo;Pelatihan ini menjadi penyejuk di tengah rutinitas dan ketegangan pekerjaan aparatur daerah. Membuka kesadaran baru tentang bekerja sebagai ibadah dan amanah suci.&rdquo;
+                                </p>
+                                <div className="testi-metrics-grid">
+                                    <div className="testi-stat-item">
+                                        <div className="testi-metric-val">4.70<small>/5</small></div>
+                                        <div className="testi-metric-lbl">Kepuasan Peserta</div>
+                                    </div>
+                                    <div className="testi-stat-item">
+                                        <div className="testi-metric-val">+70.4</div>
+                                        <div className="testi-metric-lbl">Net Promoter Score</div>
+                                    </div>
+                                    <div className="testi-stat-item">
+                                        <div className="testi-metric-val">100%</div>
+                                        <div className="testi-metric-lbl">Aparatur Berpartisipasi</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 2: Bank Indonesia Batch 3 */}
+                            <div className="testi-card-box">
+                                <div className="testi-head-row">
+                                    <div>
+                                        <div className="testi-org-title">Bank Indonesia (Batch 3)</div>
+                                        <div className="testi-org-subtitle">Executive Spiritual Wellness Session (46 Peserta Pimpinan BI)</div>
+                                    </div>
+                                    <div className="testi-score-pill">
+                                        <span>★</span> 4.90 / 5.00
+                                    </div>
+                                </div>
+                                <p className="testi-quote">
+                                    &ldquo;Memberikan perspektif baru yang sangat mendalam: spiritualitas yang aplikatif dan relevan bagi pimpinan otoritas keuangan. Dalil kuat dan penjelasan trainer sangat memuaskan batin.&rdquo;
+                                </p>
+                                <div className="testi-metrics-grid">
+                                    <div className="testi-stat-item">
+                                        <div className="testi-metric-val">4.9<small>/5</small></div>
+                                        <div className="testi-metric-lbl">Tingkat Relevansi</div>
+                                    </div>
+                                    <div className="testi-stat-item">
+                                        <div className="testi-metric-val">4.9<small>/5</small></div>
+                                        <div className="testi-metric-lbl">Kualitas Trainer</div>
+                                    </div>
+                                    <div className="testi-stat-item">
+                                        <div className="testi-metric-val">4.8<small>/5</small></div>
+                                        <div className="testi-metric-lbl">Tingkat Engagement</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Video CTA Link */}
+                            <div
+                                className="video-cta-bar"
+                                onClick={() => window.open("https://wa.me/6281224249757", "_blank")}
+                            >
+                                <div className="video-cta-text">
+                                    <h4>Tonton Video Profil &amp; Dokumentasi Pelatihan</h4>
+                                    <p>Saksikan langsung atmosfer keheningan dzikir, muhasabah, dan testimoni para pimpinan instansi.</p>
+                                </div>
+                                <div className="video-cta-btn">
+                                    Hubungi Kami &#9654;
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -741,129 +869,120 @@ export default function Home() {
             </section>
 
             {/* =========================================================
-     7. DEEP RED MULTI-FORMAT GALLERY (Ref: Screenshot 7)
+     7. DEEP RED MULTI-FORMAT GALLERY (Slide 14 & 15)
      ========================================================= */}
             <section className="sec-red-gallery">
                 <div className="container">
-                    {/* Row 1: 3 Landscape Event Cards */}
+                    <div className="gal-head">
+                        <span className="gal-eyebrow">DOKUMENTASI PELATIHAN</span>
+                        <h2 className="gal-title">Galeri Transformasi &amp; Suasana Pelatihan</h2>
+                        <p className="gal-lead">Momen-momen bermakna dalam membina ketenangan, integritas moral, dan sacred governance bersama institusi-institusi terbaik negeri.</p>
+                    </div>
+
+                    {/* Row 1: 3 Landscape Event Cards with Real Photos */}
                     <div className="gal-r1">
                         <div className="gal-stage-card">
-                            <svg viewBox="0 0 400 250">
-                                <rect width="400" height="250" fill="#2c2233" />
-                                <circle cx="200" cy="90" r="110" fill="rgba(255,180,60,0.18)" />
-                                {/* Crowd silhouettes */}
-                                <rect x="0" y="165" width="400" height="85" fill="#16101c" />
-                                {/* Speaker with outstretched arms */}
-                                <circle cx="155" cy="96" r="14" fill="#e0ab88" />
-                                <path d="M100 95 L155 120 L215 90 L195 215 L125 215 Z" fill="#111" />
-                                <rect x="135" y="185" width="45" height="65" fill="#c62828" />
-                            </svg>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/images/gallery/event-1.jpg"
+                                alt="Executive Ballroom Training - Pemda Tasikmalaya & BUMN"
+                                loading="lazy"
+                            />
+                            <div className="gal-caption-overlay">
+                                <span>Executive Ballroom Training – Pemkab Tasikmalaya</span>
+                            </div>
                         </div>
 
                         <div className="gal-stage-card">
-                            <svg viewBox="0 0 400 250">
-                                <rect width="400" height="250" fill="#d8eeff" />
-                                <rect x="210" y="0" width="190" height="250" fill="#183254" />
-                                <text x="15" y="105" fill="#183254" fontWeight="900" fontSize="36">STC</text>
-                                <text x="15" y="200" fill="#183254" fontWeight="800" fontSize="14">IDRISIYYAH</text>
-                                {/* Speaker in red shirt */}
-                                <circle cx="215" cy="62" r="20" fill="#d9a17c" />
-                                <path d="M165 100 L265 100 L255 195 L175 195 Z" fill="#d32f2f" />
-                                <rect x="180" y="195" width="70" height="55" fill="#f5f5f5" />
-                            </svg>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/images/gallery/event-5.jpg"
+                                alt="Special Executive Session - Bank Indonesia Institute"
+                                loading="lazy"
+                            />
+                            <div className="gal-caption-overlay">
+                                <span>Executive Session – Bank Indonesia Institute</span>
+                            </div>
                         </div>
 
                         <div className="gal-stage-card">
-                            <svg viewBox="0 0 400 250">
-                                <rect width="400" height="250" fill="#1a468d" />
-                                <text x="235" y="34" fill="#ffffff" fontWeight="700" fontSize="12"
-                                    letterSpacing="1">INSPIRAFEST</text>
-                                <text x="210" y="78" fill="#ffffff" fontWeight="900" fontSize="48">#1MD</text>
-                                <rect x="0" y="195" width="400" height="55" fill="#7a5835" />
-                                {/* Two speakers & white chairs */}
-                                <circle cx="150" cy="145" r="22" fill="#e8e2d5" />
-                                <circle cx="355" cy="145" r="22" fill="#e8e2d5" />
-                                <rect x="185" y="75" width="24" height="120" fill="#2c3e50" />
-                                <rect x="240" y="82" width="24" height="113" fill="#d32f2f" />
-                            </svg>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/images/gallery/event-3.jpg"
+                                alt="Outdoor Experiential Learning & Team Reflection"
+                                loading="lazy"
+                            />
+                            <div className="gal-caption-overlay">
+                                <span>Outdoor Experiential Learning &amp; Team Reflection</span>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Row 2: 4 Portrait 9:16 Reels Cards */}
+                    {/* Row 2: 4 Portrait 9:16 Reels Cards with Real Photos */}
                     <div className="gal-r2">
                         {/* Reel 1 */}
                         <div className="reel-card">
-                            <svg className="bg-art" viewBox="0 0 270 400" preserveAspectRatio="none">
-                                <rect width="270" height="400" fill="#7e4a3b" />
-                                <circle cx="135" cy="135" r="52" fill="#e5b293" />
-                                <path d="M40 400 C40 245 230 245 230 400 Z" fill="#e91e63" />
-                            </svg>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/gallery/event-2.jpg" alt="Materi Sesi Interaktif" className="bg-photo" loading="lazy" />
                             <div className="reel-overlay">
                                 <div className="reel-hash-title">
-                                    <span className="ylw">#</span><span className="cyn">JADI TENANG</span>
+                                    <span className="ylw">#</span><span className="cyn">TRANSFORMASI</span>
                                 </div>
                             </div>
                         </div>
 
                         {/* Reel 2 */}
                         <div className="reel-card bordered">
-                            <svg className="bg-art" viewBox="0 0 270 400" preserveAspectRatio="none">
-                                <rect width="270" height="400" fill="#1b141a" />
-                                <circle cx="135" cy="130" r="52" fill="#d7a184" />
-                                <path d="M45 400 C45 250 225 250 225 400 Z" fill="#111111" />
-                            </svg>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/gallery/event-4.jpg" alt="Ibadah Khusyuk & Tadarus" className="bg-photo" loading="lazy" />
                             <div className="reel-overlay">
                                 <div className="reel-fitnah-title">
-                                    KETIKA HATI<em>LELAH BEKERJA</em>
+                                    DZIKIR &amp;<em>QIYAMUL LAIL</em>
                                 </div>
                             </div>
                         </div>
 
                         {/* Reel 3 */}
                         <div className="reel-card">
-                            <svg className="bg-art" viewBox="0 0 270 400" preserveAspectRatio="none">
-                                <rect width="270" height="230" fill="#dce7eb" />
-                                <text x="20" y="80" fill="#00559b" fontWeight="800" fontSize="16">BRI</text>
-                                <text x="95" y="80" fill="#e65100" fontWeight="800" fontSize="16">BNI</text>
-                                <text x="175" y="110" fill="#00559b" fontWeight="800" fontSize="15">BCA</text>
-                                <rect y="220" width="270" height="180" fill="#1c1619" />
-                                <circle cx="145" cy="175" r="24" fill="#d7a184" />
-                                <circle cx="65" cy="295" r="42" fill="#111" />
-                                <circle cx="215" cy="305" r="38" fill="#111" />
-                            </svg>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/gallery/event-6.jpg" alt="Muhasabah Batin" className="bg-photo" loading="lazy" />
+                            <div className="reel-overlay">
+                                <div className="reel-hash-title">
+                                    <span className="ylw">#</span><span className="cyn">MUHASABAH</span>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Reel 4 */}
                         <div className="reel-card">
-                            <svg className="bg-art" viewBox="0 0 270 400" preserveAspectRatio="none">
-                                <rect width="270" height="400" fill="#8d6e63" />
-                                <circle cx="135" cy="245" r="46" fill="#e5b293" />
-                                <path d="M50 400 C50 295 220 295 220 400 Z" fill="#e91e63" />
-                            </svg>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/images/gallery/event-7.jpg" alt="Sacred Governance" className="bg-photo" loading="lazy" />
                             <div className="reel-overlay">
                                 <div className="reel-red-banner">
-                                    EKSEKUTIF INI TENANG<em>SETELAH IKUT</em><em>TRAINING STC INI</em>
+                                    INTEGRITAS &amp;<em>AMANAH</em><em>SACRED GOVERNANCE</em>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Row 3: 2 Wide 16:9 YouTube Video Cards */}
+                    {/* Row 3: 2 Wide 16:9 Video Highlight Cards with Real Thumbnails */}
                     <div className="gal-r3">
-                        {/* YouTube Left */}
-                        <div className="yt-embed-card" onClick={() => window.open('https://youtube.com', '_blank')}>
-                            <svg className="bg-art" viewBox="0 0 540 300" preserveAspectRatio="none">
-                                <rect width="540" height="300" fill="#5d4037" />
-                                <rect y="0" width="540" height="110" fill="#d7ccc8" />
-                                <text x="35" y="138" fill="#ffeb00" fontWeight="900" fontSize="38">BAKAT</text>
-                                <text x="335" y="138" fill="#ffeb00" fontWeight="900" fontSize="38">BERKAT</text>
-                                <circle cx="270" cy="130" r="32" fill="#e5b293" />
-                                <path d="M210 300 L230 175 L310 175 L330 300 Z" fill="#d32f2f" />
-                            </svg>
+                        {/* Video Left */}
+                        <div
+                            className="yt-embed-card"
+                            onClick={() => window.open("https://wa.me/6281224249757", "_blank")}
+                        >
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/images/gallery/event-8.jpg"
+                                alt="100 Peserta Pemda Tasikmalaya & BI"
+                                className="bg-art"
+                                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                loading="lazy"
+                            />
                             <div className="yt-head">
                                 <div className="yt-ch-icon">STC</div>
-                                <div className="yt-vid-title">100 PESERTA PEMDA TASIKMALAYA &amp;
-                                    BI – Spiritual Wellness STC</div>
+                                <div className="yt-vid-title">100 Peserta Pemkab Tasikmalaya &amp; Bank Indonesia – Spiritual Wellness STC</div>
                             </div>
                             <div className="yt-center-play" aria-label="Play Video">
                                 <svg viewBox="0 0 24 24">
@@ -871,31 +990,27 @@ export default function Home() {
                                 </svg>
                             </div>
                             <div className="yt-foot">
-                                <div className="yt-foot-left"><span>&#10150;</span> <span>&#9201;</span></div>
-                                <div className="yt-watch-pill">Watch on &#9654; YouTube</div>
+                                <div className="yt-foot-left"><span>&#10150;</span> <span>&#9201; 2 Hari 1 Malam</span></div>
+                                <div className="yt-watch-pill">Lihat Dokumentasi &#9654;</div>
                             </div>
                         </div>
 
-                        {/* YouTube Right */}
-                        <div className="yt-embed-card" onClick={() => window.open('https://youtube.com', '_blank')}>
-                            <svg className="bg-art" viewBox="0 0 540 300" preserveAspectRatio="none">
-                                <defs>
-                                    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stopColor="#c9d6df" />
-                                        <stop offset="65%" stopColor="#f5d6b8" />
-                                        <stop offset="100%" stopColor="#222831" />
-                                    </linearGradient>
-                                </defs>
-                                <rect width="540" height="300" fill="url(#sky)" />
-                                <circle cx="385" cy="115" r="36" fill="#d9a17c" />
-                                <circle cx="445" cy="135" r="34" fill="#e5b293" />
-                                <text x="155" y="195" fill="#ffffff" fontFamily="Alex Brush,cursive" fontSize="54">Sufi
-                                    Training</text>
-                            </svg>
+                        {/* Video Right */}
+                        <div
+                            className="yt-embed-card"
+                            onClick={() => window.open("https://wa.me/6281224249757", "_blank")}
+                        >
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/images/book/jogja-wellness.jpg"
+                                alt="Official Institutional Profile STC"
+                                className="bg-art"
+                                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                loading="lazy"
+                            />
                             <div className="yt-head">
-                                <div className="yt-ch-icon">MD</div>
-                                <div className="yt-vid-title">Official Profile - SUFI TRAINING
-                                    CENTER (2026)</div>
+                                <div className="yt-ch-icon">STC</div>
+                                <div className="yt-vid-title">Profil Resmi &amp; Kiprah Kebangsaan – SUFI TRAINING CENTER</div>
                             </div>
                             <div className="yt-center-play" aria-label="Play Video">
                                 <svg viewBox="0 0 24 24">
@@ -903,8 +1018,8 @@ export default function Home() {
                                 </svg>
                             </div>
                             <div className="yt-foot">
-                                <div className="yt-foot-left"><span>&#10150;</span> <span>&#9201;</span></div>
-                                <div className="yt-watch-pill">Watch on &#9654; YouTube</div>
+                                <div className="yt-foot-left"><span>&#10150;</span> <span>&#9201; LKP SPNF Idrisiyyah</span></div>
+                                <div className="yt-watch-pill">Lihat Profil &#9654;</div>
                             </div>
                         </div>
                     </div>
