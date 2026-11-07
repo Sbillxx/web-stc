@@ -478,7 +478,7 @@ export default function Home() {
                         </button>
 
                         <div className="trainer-cards" id="trainerList">
-                            {/* Card 1 - Founder */}
+                            {/* Card 1 - Syekh Akbar (Founder) */}
                             <div className="tr-card" hidden={!showAllTrainers && trainerPage !== 0}>
                                 <div className="tr-photo-frame cover-photo">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -495,7 +495,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Card 2 */}
+                            {/* Card 2 - H. Herman Dody Isdarmadi */}
+                            <div className="tr-card" hidden={!showAllTrainers && trainerPage !== 0}>
+                                <div className="tr-photo-frame cover-photo">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/taufiqurrachman.png"
+                                        alt="H. Herman Dody Isdarmadi, S.Ak, MNLP, Cht."
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="tr-info-box">
+                                    <b>H. Herman Dody Isdarmadi, S.Ak, MNLP, Cht.</b>
+                                    <span className="tr-role">Senior Trainer &amp; NLP Master</span>
+                                    <span className="tr-cred">Master Practitioner NLP &amp; Certified Hypnotherapist</span>
+                                </div>
+                            </div>
+
+                            {/* Card 3 - Ust. Dr. Asep Deni */}
                             <div className="tr-card" hidden={!showAllTrainers && trainerPage !== 0}>
                                 <div className="tr-photo-frame">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -512,47 +529,13 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Card 3 */}
-                            <div className="tr-card" hidden={!showAllTrainers && trainerPage !== 0}>
-                                <div className="tr-photo-frame">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img
-                                        src="/images/trainers/herman-dody.png"
-                                        alt="H. Herman Dody Isdarmadi, MNLP, Cht."
-                                        loading="lazy"
-                                    />
-                                </div>
-                                <div className="tr-info-box">
-                                    <b>H. Herman Dody Isdarmadi, S.Ak, MNLP, Cht.</b>
-                                    <span className="tr-role">Senior Trainer &amp; NLP Master</span>
-                                    <span className="tr-cred">Master Practitioner NLP &amp; Certified Hypnotherapist</span>
-                                </div>
-                            </div>
-
-                            {/* Card 4 - Cecep Hidayatulloh */}
-                            <div className="tr-card extra" hidden={!showAllTrainers && trainerPage !== 1}>
-                                <div className="tr-photo-frame">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img
-                                        src="/images/trainers/cecep-hidayatulloh.png"
-                                        alt="Ust. Cecep Hidayatulloh Al-Idrisi, M.Sos."
-                                        loading="lazy"
-                                    />
-                                </div>
-                                <div className="tr-info-box">
-                                    <b>Ust. Cecep Hidayatulloh Al-Idrisi, M.Sos.</b>
-                                    <span className="tr-role">Senior Trainer STC</span>
-                                    <span className="tr-cred">Magister Sosial, Komunikasi Dakwah &amp; Manajemen Qalbu</span>
-                                </div>
-                            </div>
-
-                            {/* Card 5 - Taufiqurrachman */}
+                            {/* Card 4 - M. Taufiqurrachman */}
                             <div className="tr-card extra" hidden={!showAllTrainers && trainerPage !== 1}>
                                 <div className="tr-photo-frame cover-photo">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img
-                                        src="/images/trainers/taufiqurrachman.png"
-                                        alt="Muhammad Taufiqurrachman, S.E Akt. M.Sc."
+                                        src="/images/trainers/adang-nurdin.png"
+                                        alt="M. Taufiqurrachman, S.E Akt. M.Sc."
                                         loading="lazy"
                                     />
                                 </div>
@@ -563,12 +546,12 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Card 6 - Adang Nurdin */}
+                            {/* Card 5 - Ust. Adang Nurdin */}
                             <div className="tr-card extra" hidden={!showAllTrainers && trainerPage !== 1}>
-                                <div className="tr-photo-frame cover-photo">
+                                <div className="tr-photo-frame">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img
-                                        src="/images/trainers/adang-nurdin.png"
+                                        src="/images/trainers/cecep-hidayatulloh.png"
                                         alt="Ust. Adang Nurdin MS Al-Idrisi, M.Pd"
                                         loading="lazy"
                                     />
@@ -577,6 +560,23 @@ export default function Home() {
                                     <b>Ust. Adang Nurdin MS Al-Idrisi, M.Pd</b>
                                     <span className="tr-role">Senior Trainer STC</span>
                                     <span className="tr-cred">Magister Pendidikan &amp; Pembimbing Ibadah Terbimbing</span>
+                                </div>
+                            </div>
+
+                            {/* Card 6 - Ust. Cecep Hidayatulloh */}
+                            <div className="tr-card extra" hidden={!showAllTrainers && trainerPage !== 1}>
+                                <div className="tr-photo-frame">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/trainers/herman-dody.png"
+                                        alt="Ust. Cecep Hidayatulloh Al-Idrisi, M.Sos."
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="tr-info-box">
+                                    <b>Ust. Cecep Hidayatulloh Al-Idrisi, M.Sos.</b>
+                                    <span className="tr-role">Senior Trainer STC</span>
+                                    <span className="tr-cred">Magister Sosial, Komunikasi Dakwah &amp; Manajemen Qalbu</span>
                                 </div>
                             </div>
                         </div>
