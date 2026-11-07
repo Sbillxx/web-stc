@@ -324,18 +324,15 @@ export default function Home() {
                     <h2 className="client-title">Dipercaya oleh Kementerian, Lembaga Negara, BUMN &amp; Swasta</h2>
                 </div>
 
-                {/* Continuous Infinite Marquee Slider for PC & Mobile */}
+                {/* Continuous Infinite Marquee Slider (Pure Logo) for PC & Mobile */}
                 <div className="client-marquee-container" aria-label="Mitra & Klien Resmi Sufi Training Center">
                     <div className="client-marquee-track">
                         {/* Group 1 */}
                         <div className="client-marquee-group">
                             {CLIENT_PARTNERS.map((client, idx) => (
-                                <div className="client-card" key={`c1-${idx}`}>
-                                    <div className="client-card-logo-wrap">
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={client.logo} alt={client.name} loading="lazy" />
-                                    </div>
-                                    <span className="client-card-name">{client.name}</span>
+                                <div className="client-logo-item" key={`c1-${idx}`} title={client.name}>
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img src={client.logo} alt={client.name} loading="lazy" />
                                 </div>
                             ))}
                         </div>
@@ -343,12 +340,9 @@ export default function Home() {
                         {/* Group 2 (Cloned for seamless 100% loop) */}
                         <div className="client-marquee-group" aria-hidden="true">
                             {CLIENT_PARTNERS.map((client, idx) => (
-                                <div className="client-card" key={`c2-${idx}`}>
-                                    <div className="client-card-logo-wrap">
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={client.logo} alt="" loading="lazy" />
-                                    </div>
-                                    <span className="client-card-name">{client.name}</span>
+                                <div className="client-logo-item" key={`c2-${idx}`} title={client.name}>
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img src={client.logo} alt="" loading="lazy" />
                                 </div>
                             ))}
                         </div>
