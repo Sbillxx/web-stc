@@ -193,8 +193,7 @@ export default function Home() {
                                     Melihat tingginya tingkat kejenuhan kerja (<em>burnout</em>), disorientasi kepemimpinan, dan
                                     kerapuhan integritas di era modern, STC menghadirkan terobosan dengan memadukan tiga pilar
                                     keilmuan: kedalaman spiritualitas <strong>Sufistik (Tazkiyatun Nafs)</strong>, metodologi
-                                    perilaku <strong>Neuro-Linguistic Programming (NLP)</strong>, dan temuan biologi kesadaran
-                                    <strong>Neuroscience</strong>. Kolaborasi ini mentransformasikan ajaran spiritual menjadi
+                                    perilaku <strong>Neuro-Linguistic Programming (NLP)</strong>, dan temuan biologi kesadaran <strong>Neuroscience</strong>. Kolaborasi ini mentransformasikan ajaran spiritual menjadi
                                     instrumen nyata tata kelola kepemimpinan yang amanah, tenang, dan anti-fraud (<em>Sacred
                                         Governance</em>).
                                 </p>
