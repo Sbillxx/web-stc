@@ -31,7 +31,7 @@ export const viewport: Viewport = {
 };
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://sufitrainingcenter.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.sufitrainingcenter.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
