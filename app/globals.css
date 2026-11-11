@@ -1927,9 +1927,9 @@
 
         .ft-sig {
             font-family: var(--script);
-            font-size: 52px;
+            font-size: clamp(38px, 5.5vw, 52px);
             color: #ffffff;
-            line-height: 1;
+            line-height: 1.1;
             margin-bottom: 14px;
         }
 

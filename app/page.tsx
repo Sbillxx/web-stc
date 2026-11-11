@@ -31,7 +31,7 @@ export default function Home() {
             <div className="top-bar" id="top">
                 <div className="container top-bar-inner">
                     <div className="top-left">
-                        <span>📍 Komplek Pesantren Idrisiyyah, Pagendingan, Cisayong, Kab. Tasikmalaya</span>
+                        <span>📍 Pesantren Idrisiyyah, Pagendingan Desa Jatihurip, Kec. Cisayong, Kab. Tasikmalaya</span>
                     </div>
                     <div className="top-right">
                         <a
@@ -199,8 +199,7 @@ export default function Home() {
                                         Governance</em>).
                                 </p>
                                 <p>
-                                    Kini, beroperasi secara legal sebagai <strong>Lembaga Kursus dan Pelatihan (LKP
-                                        SPNF)</strong> Yayasan Idrisiyyah, STC telah dipercaya mendampingi ribuan pemimpin dari
+                                    Kini, beroperasi secara legal sebagai <strong>Lembaga Kursus dan Pelatihan Idrisiyyah Center of Excellence (LKP SPNF)</strong> Yayasan Idrisiyyah, STC telah dipercaya mendampingi ribuan pemimpin dari
                                     kementerian, pemerintah daerah, badan usaha milik negara (BUMN), perbankan nasional, hingga
                                     institusi pendidikan tinggi di seluruh Indonesia.
                                 </p>
@@ -1002,7 +1001,7 @@ export default function Home() {
                 <div className="container footer-3col">
                     {/* Left Column */}
                     <div>
-                        <div className="ft-sig">Sufi Training</div>
+                        <div className="ft-sig">Sufi Training Center</div>
                         <div className="ft-copy">
                             &copy; 2026 Sufi Training Center.<br />
                             All Rights Reserved
@@ -1013,8 +1012,8 @@ export default function Home() {
                     <div className="ft-address">
                         <b>Sufi Training Center</b>
                         <span>
-                            Komplek Pesantren Idrisiyyah, Pagendingan<br />
-                            Jl. Raya Cisayong, Kab. Tasikmalaya<br />
+                            Pesantren Idrisiyyah, Pagendingan<br />
+                            Desa Jatihurip, Kec. Cisayong, Kab. Tasikmalaya<br />
                             46153
                         </span>
                         <a

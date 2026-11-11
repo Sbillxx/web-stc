@@ -33,7 +33,7 @@ export default function JsonLd() {
           "Pelatihan pengembangan potensi manusia secara holistik untuk instansi pemerintah dan korporasi. Mengintegrasikan tiga pilar keilmuan: Tazkiyatun Nafs (Sufistik Modern), NLP, dan Neuroscience.",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Komplek Pesantren Idrisiyyah, Pagendingan",
+          streetAddress: "Pesantren Idrisiyyah, Pagendingan, Desa Jatihurip",
           addressLocality: "Cisayong",
           addressRegion: "Tasikmalaya, Jawa Barat",
           postalCode: "46153",
