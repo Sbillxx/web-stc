@@ -5,11 +5,16 @@ export default function robots(): MetadataRoute.Robots {
     process.env.NEXT_PUBLIC_SITE_URL || "https://sufitrainingcenter.vercel.app";
 
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+      },
+    ],
     sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
-

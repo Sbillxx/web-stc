@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Fraunces, Alex_Brush } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "./components/GoogleAnalytics";
+import JsonLd from "./components/JsonLd";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,16 +30,18 @@ export const viewport: Viewport = {
   themeColor: "#1b7f8c",
 };
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://sufitrainingcenter.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sufitrainingcenter.vercel.app"
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Sufi Training Center - Spiritual Wellness & Sacred Governance",
+    default:
+      "Sufi Training Center - Spiritual Wellness & Sacred Governance for Leaders",
     template: "%s | Sufi Training Center",
   },
   description:
-    "Pelatihan pengembangan potensi manusia secara holistik untuk instansi pemerintah dan perusahaan. Mengintegrasikan tiga pilar keilmuan: pendekatan sufistik modern, Neuro-Linguistic Programming (NLP), dan neuroscience.",
+    "Pusat pelatihan pengembangan potensi manusia secara holistik untuk instansi pemerintah dan korporasi. Mengintegrasikan tiga pilar keilmuan: Tazkiyatun Nafs (Sufistik Modern), Neuro-Linguistic Programming (NLP), dan Neuroscience untuk melahirkan pemimpin berintegritas tinggi, amanah, dan berjiwa tenang (Sacred Governance).",
   keywords: [
     "Sufi Training Center",
     "STC",
@@ -49,22 +53,40 @@ export const metadata: Metadata = {
     "Tazkiyatun Nafs",
     "Executive Retreat",
     "Anti Fraud Training",
+    "Corporate Training Indonesia",
+    "Pelatihan SDM Instansi",
+    "Training BUMN",
+    "In-house Training Kepemimpinan",
+    "NLP Spiritual",
+    "Neuroscience Leadership",
+    "Syekh Akbar Muhammad Fathurahman",
+    "Pelatihan Integritas ASN",
+    "Outbound Spiritual",
   ],
   authors: [
     {
       name: "Sufi Training Center",
-      url: "https://sufitrainingcenter.vercel.app",
+      url: siteUrl,
     },
   ],
   creator: "Sufi Training Center",
   publisher: "Yayasan Idrisiyyah",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://sufitrainingcenter.vercel.app",
-    title: "Sufi Training Center - Spiritual Wellness & Sacred Governance",
+    url: siteUrl,
+    title:
+      "Sufi Training Center - Spiritual Wellness & Sacred Governance for Leaders",
     description:
-      "Pelatihan pengembangan potensi manusia secara holistik untuk instansi pemerintah dan perusahaan. Mengintegrasikan tiga pilar keilmuan: pendekatan sufistik modern, Neuro-Linguistic Programming (NLP), dan neuroscience.",
+      "Pelatihan pengembangan potensi manusia secara holistik untuk instansi pemerintah dan perusahaan berbasis pendekatan sufistik modern, NLP, dan neuroscience.",
     siteName: "Sufi Training Center",
     images: [
       {
@@ -77,11 +99,27 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sufi Training Center - Spiritual Wellness & Sacred Governance",
+    title:
+      "Sufi Training Center - Spiritual Wellness & Sacred Governance for Leaders",
     description:
-      "Pelatihan pengembangan potensi manusia secara holistik untuk instansi pemerintah dan perusahaan. Mengintegrasikan tiga pilar keilmuan: pendekatan sufistik modern, NLP, dan neuroscience.",
+      "Pelatihan pengembangan potensi manusia secara holistik untuk instansi pemerintah dan perusahaan berbasis pendekatan sufistik modern, NLP, dan neuroscience.",
     images: ["/logo-stc-full.png"],
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+  },
+  category: "Education",
   icons: {
     icon: [
       { url: "/icon.png", sizes: "64x64", type: "image/png" },
@@ -103,7 +141,13 @@ export default function RootLayout({
       lang="id"
       className={`${inter.variable} ${fraunces.variable} ${alexBrush.variable}`}
     >
-      <body>{children}</body>
+      <head>
+        <JsonLd />
+      </head>
+      <body>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }

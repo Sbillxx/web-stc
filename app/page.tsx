@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackWhatsAppClick } from "@/lib/gtag";
 
 const CLIENT_PARTNERS = [
     { name: "Bank Indonesia (BI)", logo: "/images/clients/bank-indonesia.png" },
@@ -33,7 +34,12 @@ export default function Home() {
                         <span>📍 Komplek Pesantren Idrisiyyah, Pagendingan, Cisayong, Kab. Tasikmalaya</span>
                     </div>
                     <div className="top-right">
-                        <a href="https://wa.me/6281224249757" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://wa.me/6281224249757"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => trackWhatsAppClick("Top Bar")}
+                        >
                             WA: 0812-2424-9757
                         </a>
                         <span>·</span>
@@ -70,7 +76,13 @@ export default function Home() {
                     </nav>
 
                     <div className="nav-actions">
-                        <a href="https://wa.me/6281224249757" className="btn-nav-cta" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://wa.me/6281224249757"
+                            className="btn-nav-cta"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => trackWhatsAppClick("Navbar Desktop")}
+                        >
                             Konsultasi Training &rarr;
                         </a>
                         <button
@@ -105,7 +117,10 @@ export default function Home() {
                         className="btn-nav-cta btn-mobile-cta"
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={() => setIsNavOpen(false)}
+                        onClick={() => {
+                            trackWhatsAppClick("Mobile Drawer");
+                            setIsNavOpen(false);
+                        }}
                     >
                         Konsultasi Training &rarr;
                     </a>
@@ -128,8 +143,13 @@ export default function Home() {
                     </p>
 
                     <div className="hero-action-simple">
-                        <a href="https://wa.me/6281224249757" className="btn-hero-primary" target="_blank"
-                            rel="noopener noreferrer">
+                        <a
+                            href="https://wa.me/6281224249757"
+                            className="btn-hero-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => trackWhatsAppClick("Hero Section")}
+                        >
                             Konsultasi Training Instansi &rarr;
                         </a>
                     </div>
@@ -680,7 +700,13 @@ export default function Home() {
                         <p>
                             Dokumentasi visual rangkaian pelatihan kepemimpinan, muhasabah batin, dan kajian tasawuf tematik. Dirancang membimbing eksekutif dan aparatur negara menggapai ketenangan batin (*nafs muthmainnah*) demi melahirkan kepemimpinan yang amanah, adil, dan berdaya tahan tinggi.
                         </p>
-                        <a href="https://wa.me/6281224249757" target="_blank" rel="noopener noreferrer" className="btn-black-rect">
+                        <a
+                            href="https://wa.me/6281224249757"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-black-rect"
+                            onClick={() => trackWhatsAppClick("Dokumentasi Section")}
+                        >
                             Konsultasi Jadwal Pelatihan &rarr;
                         </a>
                     </div>
@@ -710,7 +736,13 @@ export default function Home() {
                             <strong>Spiritual Wellness: Sufistic Neuroscience</strong> karya Syekh Akbar Muhammad Fathurahman, M.Ag. Mengulas integrasi tasawuf dan neurosains modern untuk kepemimpinan utuh.
                         </p>
 
-                        <a href="https://wa.me/6281224249757" className="btn-view-cat" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://wa.me/6281224249757"
+                            className="btn-view-cat"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => trackWhatsAppClick("Katalog Silabus")}
+                        >
                             Unduh Silabus Lengkap &rarr;
                         </a>
                     </div>
@@ -900,7 +932,10 @@ export default function Home() {
                         {/* Video Left */}
                         <div
                             className="yt-embed-card"
-                            onClick={() => window.open("https://wa.me/6281224249757", "_blank")}
+                            onClick={() => {
+                                trackWhatsAppClick("Galeri Video Pemkab & BI");
+                                window.open("https://wa.me/6281224249757", "_blank");
+                            }}
                         >
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
@@ -928,7 +963,10 @@ export default function Home() {
                         {/* Video Right */}
                         <div
                             className="yt-embed-card"
-                            onClick={() => window.open("https://wa.me/6281224249757", "_blank")}
+                            onClick={() => {
+                                trackWhatsAppClick("Galeri Video Profil STC");
+                                window.open("https://wa.me/6281224249757", "_blank");
+                            }}
                         >
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
@@ -979,7 +1017,13 @@ export default function Home() {
                             Jl. Raya Cisayong, Kab. Tasikmalaya<br />
                             46153
                         </span>
-                        <a className="ft-tel" href="https://wa.me/6281224249757">(0812) 24249757</a>
+                        <a
+                            className="ft-tel"
+                            href="https://wa.me/6281224249757"
+                            onClick={() => trackWhatsAppClick("Footer Telepon")}
+                        >
+                            (0812) 24249757
+                        </a>
                     </div>
 
                     {/* Right Column */}
